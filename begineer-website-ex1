@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Örnek Web Sitesi</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+    }
+    header {
+        background-color: #f08080; /* Pembe renk */
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav {
+        background-color: #ffb6c1; /* Pembe renk */
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    main {
+        padding: 20px;
+    }
+    footer {
+        background-color: #f08080; /* Pembe renk */
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Örnek Web Sitesi</h1>
+    </header>
+    <nav>
+        <a href="#">Anasayfa</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
+    </nav>
+    <main>
+        <h2>Hoş Geldiniz!</h2>
+        <p>
+            Bu bir örnek web sitesidir. Front-end kısmında HTML, CSS ve basit biraz JavaScript kullanılmıştır.
+        </p>
+    </main>
+    <footer>
+        <p>Telif Hakkı © 2024 Örnek Web Sitesi</p>
+    </footer>
+</body>
+</html>
