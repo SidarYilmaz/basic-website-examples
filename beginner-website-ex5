@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalp Atış Hızı Grafiği</title>
+<!-- Bootstrap CSS dosyası -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Chart.js kütüphanesi -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+    .container {
+        margin-top: 50px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Kalp Atış Hızı Grafiği</h1>
+        <canvas id="heartRateChart" width="800" height="400"></canvas>
+    </div>
+
+    <!-- Bootstrap JS dosyası ve Chart.js kodları -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Grafiği oluşturmak için Chart.js kullanımı
+        var ctx = document.getElementById('heartRateChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['0sn', '10sn', '20sn', '30sn', '40sn', '50sn', '60sn'],
+                datasets: [{
+                    label: 'Kalp Atış Hızı (bpm)',
+                    data: [60, 62, 64, 66, 68, 70, 72],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
