@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yemek Tarifleri</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ff6347; /* Ateş kırmızısı */
+    }
+    header {
+        background-color: #e91e63; /* Pembe renk */
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav {
+        background-color: #f06292; /* Açık pembe */
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    main {
+        padding: 20px;
+    }
+    footer {
+        background-color: #e91e63; /* Pembe renk */
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .tarif {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px; /* Daire yapmak için border-radius */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+        color: #4caf50; /* Açık yeşil */
+        font-weight: bold; /* Kalın font */
+    }
+    footer p {
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Yemek Tarifleri</h1>
+    </header>
+    <nav>
+        <a href="#">Ana Sayfa</a>
+        <a href="#">Çorbalar</a>
+        <a href="#">Ara Sıcaklar</a>
+        <a href="#">Ana Yemekler</a>
+        <a href="#">Tatlılar</a>
+    </nav>
+    <main>
+        <div class="tarif">
+            <h2>Mantı Tarifi</h2>
+            <img src="manti.jpg" alt="Mantı">
+            <p>Malzemeler:</p>
+            <ul>
+                <li>500 gram kıyma</li>
+                <li>2 su bardağı un</li>
+                <li>Yeteri kadar su</li>
+                <li>Tuz</li>
+            </ul>
+            <p>Hazırlanışı:</p>
+            <ol>
+                <li>Kıyma, tuz ve baharatlarla harmanlanır.</li>
+                <li>Hamur yoğrulup açılır, içine harç konur ve mantılar yapılır.</li>
+                <li>Kaynar suda mantılar pişirilir.</li>
+            </ol>
+        </div>
+        <div class="tarif">
+            <h2>Tiramisu Tarifi</h2>
+            <img src="tiramisu.jpg" alt="Tiramisu">
+            <p>Malzemeler:</p>
+            <ul>
+                <li>2 su bardağı krema</li>
+                <li>1 su bardağı pudra şekeri</li>
+                <li>250 gram mascarpone peyniri</li>
+                <li>1 paket bisküvi</li>
+                <li>Kakao</li>
+            </ul>
+            <p>Hazırlanışı:</p>
+            <ol>
+                <li>Krema ve pudra şekerini çırpıp koyulaşana kadar karıştırın.</li>
+                <li>Mascarpone peyniri ekleyip karıştırın.</li>
+                <li>Bisküvileri kahve ile ıslatın ve tabanına dizin.</li>
+                <li>Krema karışımını üzerine dökün.</li>
+                <li>Üzerini kakao ile kaplayın ve buzdolabında bekletin.</li>
+            </ol>
+        </div>
+    </main>
+   
+</body>
+</html>
