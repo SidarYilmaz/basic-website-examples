@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sağlık Uygulaması</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0; /* Açık gri arka plan */
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+        color: #333; /* Koyu gri başlık */
+        text-align: center;
+    }
+    p {
+        color: #666; /* Orta gri metin */
+    }
+    .input-group {
+        margin-bottom: 20px;
+    }
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333; /* Koyu gri etiket */
+    }
+    .input-group input {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+    .input-group input[type="submit"] {
+        background-color: #4caf50; /* Yeşil buton */
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    .input-group input[type="submit"]:hover {
+        background-color: #45a049; /* Yeşil hover etkisi */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sağlık Uygulaması</h1>
+        <form>
+            <div class="input-group">
+                <label for="ad">Adınız:</label>
+                <input type="text" id="ad" name="ad" required>
+            </div>
+            <div class="input-group">
+                <label for="soyad">Soyadınız:</label>
+                <input type="text" id="soyad" name="soyad" required>
+            </div>
+            <div class="input-group">
+                <label for="yas">Yaşınız:</label>
+                <input type="number" id="yas" name="yas" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="sifre">Şifre:</label>
+                <input type="password" id="sifre" name="sifre" required>
+            </div>
+            <div class="input-group">
+                <input type="submit" value="Giriş Yap">
+            </div>
+        </form>
+        <p>Kayıt olmak için <a href="#">buraya tıklayın</a>.</p>
+    </div>
+</body>
+</html>
