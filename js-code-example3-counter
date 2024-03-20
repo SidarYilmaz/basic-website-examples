@@ -1,0 +1,11 @@
+function zamanlayiciSure() {
+  let zaman = 0;
+  const zamanlayici = setInterval(function() {
+    zaman++;
+    console.log(zaman + ' saniye geçti.');
+    if (zaman === 10) {
+      clearInterval(zamanlayici);
+      console.log('Zamanlayıcı durduruldu.');
+    }
+  }, 1000);
+}
