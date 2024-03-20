@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hesap Makinesi</title>
+</head>
+<body>
+  <script>
+    // JavaScript kodunu buraya ekleyebilirsiniz
+    function topla(sayi1, sayi2) {
+        return sayi1 + sayi2;
+    }
+
+    function cikar(sayi1, sayi2) {
+        return sayi1 - sayi2;
+    }
+
+    function carp(sayi1, sayi2) {
+        return sayi1 * sayi2;
+    }
+
+    function bol(sayi1, sayi2) {
+        if (sayi2 !== 0) {
+            return sayi1 / sayi2;
+        } else {
+            return "Bir sayıyı sıfıra bölemezsiniz!";
+        }
+    }
+
+    let num1 = parseFloat(prompt("Birinci sayıyı girin:"));
+    let num2 = parseFloat(prompt("İkinci sayıyı girin:"));
+
+    alert("Toplam: " + topla(num1, num2) +
+        "\nÇıkarma: " + cikar(num1, num2) +
+        "\nÇarpma: " + carp(num1, num2) +
+        "\nBölme: " + bol(num1, num2));
+  </script>
+</body>
+</html>
