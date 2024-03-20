@@ -1,0 +1,5 @@
+function renkDegistir() {
+  const renkler = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'];
+  const randomRenk = renkler[Math.floor(Math.random() * renkler.length)];
+  document.body.style.backgroundColor = randomRenk;
+}
