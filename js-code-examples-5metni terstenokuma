@@ -1,0 +1,23 @@
+function metniTersCevir(metin) {
+  return metin.split('').reverse().join('');
+}
+
+function harfDonustur(metin) {
+  let yeniMetin = '';
+  for (let i = 0; i < metin.length; i++) {
+    if (metin[i].toLowerCase() === metin[i]) {
+      yeniMetin += metin[i].toUpperCase();
+    } else {
+      yeniMetin += metin[i].toLowerCase();
+    }
+  }
+  return yeniMetin;
+}
+
+const kullaniciMetni = prompt('Lütfen bir metin girin:');
+const tersMetin = metniTersCevir(kullaniciMetni);
+const donusturulmusMetin = harfDonustur(kullaniciMetni);
+
+console.log('Girilen Metin:', kullaniciMetni);
+console.log('Ters Çevrilmiş Metin:', tersMetin);
+console.log('Büyük/Küçük Harf Dönüştürülmüş Metin:', donusturulmusMetin);
