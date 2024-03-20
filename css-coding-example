@@ -1,0 +1,68 @@
+/* Temel CSS Stilleri */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Hafif gri arka plan rengi */
+  color: #333; /* Genel metin rengi */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: #007bff; /* Mavi başlık arka plan rengi */
+  color: #fff; /* Başlık metin rengi */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #343a40; /* Koyu gri menü arka plan rengi */
+  color: #fff; /* Menü metin rengi */
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease; /* Geçiş efekti */
+}
+
+.navbar a:hover {
+  color: #ffc107; /* Sarı renkli efekt */
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px; /* Kenar yuvarlama */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölgelendirme */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Mavi düğme arka plan rengi */
+  color: #fff; /* Düğme metin rengi */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Koyu mavi efekt */
+}
+
+.footer {
+  background-color: #343a40; /* Koyu gri footer arka plan rengi */
+  color: #fff; /* Footer metin rengi */
+  text-align: center;
+  padding: 10px 0;
+}
