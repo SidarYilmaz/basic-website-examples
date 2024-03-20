@@ -1,0 +1,11 @@
+function faktoriyelHesapla(sayi) {
+  if (sayi === 0 || sayi === 1) {
+    return 1;
+  } else {
+    return sayi * faktoriyelHesapla(sayi - 1);
+  }
+}
+
+const kullaniciSayi = parseInt(prompt('Faktöriyeli hesaplanacak sayıyı girin:'));
+const faktoriyel = faktoriyelHesapla(kullaniciSayi);
+console.log(kullaniciSayi + ' sayısının faktöriyeli: ' + faktoriyel);
